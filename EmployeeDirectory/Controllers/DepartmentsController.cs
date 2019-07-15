@@ -48,6 +48,8 @@ namespace EmployeeDirectory.Controllers
                 return NotFound();
             }
 
+            ViewData["DepartmentEmployees"] = await _context.Employee.Where(e => e.DepartmentId == id).ToListAsync();
+
             return View(department);
         }
 
