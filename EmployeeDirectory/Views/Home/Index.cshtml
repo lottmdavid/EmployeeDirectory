@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="row form-group">
+    <div class="col-md-12 alignCenter">
+        <h2>Employee Directory</h2>
+    </div>
+</div>
+<div class="row form-group">
+    <form method="post">
+        <div class="col-md-2 col-md-offset-4 alignCenter">
+            <button class="btn btn-primary" asp-controller="Departments" asp-action="Index">Manage Departments</button>
+        </div>
+        <div class="col-md-2 alignCenter">
+            <button class="btn btn-primary" asp-controller="Employees" asp-action="Index">Manage Employees</button>
+        </div>
+    </form>
+</div>
