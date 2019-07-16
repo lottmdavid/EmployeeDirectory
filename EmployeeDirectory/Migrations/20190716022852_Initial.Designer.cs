@@ -4,14 +4,16 @@ using EmployeeDirectory.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EmployeeDirectory.Migrations
 {
     [DbContext(typeof(EmployeeDirectoryContext))]
-    partial class EmployeeDirectoryContextModelSnapshot : ModelSnapshot
+    [Migration("20190716022852_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
